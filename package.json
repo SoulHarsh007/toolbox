@@ -1,0 +1,29 @@
+{
+  "name": "@medriox/toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeDrioX/toolbox.git"
+  },
+  "keywords": [
+    "toolbox",
+    "tool",
+    "tools",
+    "help"
+  ],
+  "author": "MeDrioX",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/MeDrioX/toolbox/issues"
+  },
+  "homepage": "https://github.com/MeDrioX/toolbox#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dateformat": "^3.0.3"
+  }
+}
