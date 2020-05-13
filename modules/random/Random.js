@@ -2,7 +2,7 @@
  * @author MeDrioX <medriox@gmail.com>
  */
 
-'use script'
+"use strict";
 
 module.exports = class Random {
 
@@ -14,4 +14,4 @@ module.exports = class Random {
         return Math.floor((Math.random() * (max - min + 1)) + min);
     }
 
-}
+};

@@ -2,12 +2,9 @@
  * @author MeDrioX <medriox@gmail.com>
  */
 
-let dateFormat = require('dateformat');
-let colors = require('colors');
-let util = require('util');
+const dateFormat = require("dateformat");
 
-
-'use script'
+"use strict";
 
 module.exports = class Logger {
 
@@ -16,32 +13,32 @@ module.exports = class Logger {
     }
 
     info(content){
-        let date = dateFormat(new Date(), 'dd/mm/yyyy à HH:MM:s');
-        let format = "%date% - %type%: %content%";
-        let type = `INFO`.blue;
-        let output = format.replace("%date%", date).replace("%type%", type).replace('%content%', content);
+        const date = dateFormat(new Date(), "dd/mm/yyyy à HH:MM:s");
+        const format = "%date% - %type%: %content%";
+        const type = "INFO".blue;
+        const output = format.replace("%date%", date).replace("%type%", type).replace("%content%", content);
         return console.log(output);
     }
     warn(content){
-        let date = dateFormat(new Date(), 'dd/mm/yyyy à HH:MM:s');
-        let format = "%date% - %type%: %content%";
-        let type = `WARN`.yellow;
-        let output = format.replace("%date%", date).replace("%type%", type).replace('%content%', content);
+        const date = dateFormat(new Date(), "dd/mm/yyyy à HH:MM:s");
+        const format = "%date% - %type%: %content%";
+        const type = "WARN".yellow;
+        const output = format.replace("%date%", date).replace("%type%", type).replace("%content%", content);
         return console.log(output);
     }
     debug(content){
-        let date = dateFormat(new Date(), 'dd/mm/yyyy à HH:MM:s');
-        let format = "%date% - %type%: %content%";
-        let type = `DEBUG`.green;
-        let output = format.replace("%date%", date).replace("%type%", type).replace('%content%', content);
+        const date = dateFormat(new Date(), "dd/mm/yyyy à HH:MM:s");
+        const format = "%date% - %type%: %content%";
+        const type = "DEBUG".green;
+        const output = format.replace("%date%", date).replace("%type%", type).replace("%content%", content);
         return console.log(output);
     }
     error(content){
-        let date = dateFormat(new Date(), 'dd/mm/yyyy à HH:MM:s');
-        let format = "%date% - %type%: %content%";
-        let type = `ERROR`.red;
-        let output = format.replace("%date%", date).replace("%type%", type).replace('%content%', content);
+        const date = dateFormat(new Date(), "dd/mm/yyyy à HH:MM:s");
+        const format = "%date% - %type%: %content%";
+        const type = "ERROR".red;
+        const output = format.replace("%date%", date).replace("%type%", type).replace("%content%", content);
         return console.log(output);
     }
 
-}
+};
