@@ -24,7 +24,7 @@
   "homepage": "https://github.com/MeDrioX/toolbox#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "dateformat": "^3.0.3"
+    "dateformat": "^4.2.2"
   },
   "devDependencies": {
     "eslint": "^7.0.0"
